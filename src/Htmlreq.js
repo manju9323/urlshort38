@@ -45,7 +45,7 @@ useEffect(()=>{Fast()},[])
     
     onSubmit:async(value)=>{   
       console.log(value)
-      await axios.post(`https://backendreset.onrender.com/reset-pass/${search.get("id")}/${search.get("token")}`,value)
+      await axios.post(`https://urlshortback.onrender.com/reset-pass/${search.get("id")}/${search.get("token")}`,value)
       
         .then(res=>{
           toast.success("sucessfully set password",{
