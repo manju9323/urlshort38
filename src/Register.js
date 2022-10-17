@@ -31,7 +31,7 @@ function Register(props) {
   
   onSubmit:async(value)=>{
     console.log(value)
-  await axios.post("https://backendreset.onrender.com/api/auth/register",value)
+  await axios.post("https://urlshortback.onrender.com/api/auth/register",value)
   
   .then(res=>{
     toast.success("sucessfully registered!",{

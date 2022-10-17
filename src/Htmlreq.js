@@ -18,7 +18,7 @@ function Htmlreq(props) {
  
 
   const Fast=async()=>{
-  await axios.get(`https://backendreset.onrender.com/reset-pass/${search.get("id")}/${search.get("token")}`)
+  await axios.get(`https://urlshortback.onrender.com/reset-pass/${search.get("id")}/${search.get("token")}`)
     .then(res=>{
       setdata(res.data.email)
       toast.success("Please enter the reset password",{

@@ -20,7 +20,7 @@ function Forget(props) {
   onSubmit:async(value)=>{
     console.log(value)
   
-    await axios.post("https://backendreset.onrender.com/forget-pass",value)
+    await axios.post("https://urlshortback.onrender.com/forget-pass",value)
     
       .then(res=>{
         toast.success("link for reset password will send to your email",{

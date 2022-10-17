@@ -13,7 +13,7 @@ const Joy = () => {
 
   let handleSubmit = async(values)=>{
     console.log(values)
-    await axios.post("http://localhost:8000/url/register",values)
+    await axios.post("https://urlshortback.onrender.com/url/register",values)
     
   }
   

@@ -11,14 +11,14 @@ function Home() {
   let [can, setCan] = useState([])
 
   async function getdata() {
-    let res = await axios.get("http://localhost:8000/url/getall")
+    let res = await axios.get("https://urlshortback.onrender.com/url/getall")
     //console.log(res.data)
     setCan(res.data)
     
 }
 
 async function del(some) {
-  await axios.delete(`http://localhost:8000/url/deleteurl/${some}`)
+  await axios.delete(`https://urlshortback.onrender.com/url/deleteurl/${some}`)
   getdata()
 }
 
@@ -36,7 +36,7 @@ useEffect(() => {getdata()}, [])
              
 
              <a className='aaa'
-             href={`http://localhost:8000/url/redir/${e.key}`} target="_blank" rel="noreferrer">`http://localhost:8000/url/redir/${e.key}`</a> 
+             href={`https://urlshortback.onrender.com/url/redir/${e.key}`} target="_blank" rel="noreferrer">`http://localhost:8000/url/redir/${e.key}`</a> 
              <button className="butt" onClick={()=>del(e._id)}>Remove</button>
             </Card.Body>
            </div>

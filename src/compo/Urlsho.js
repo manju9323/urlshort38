@@ -11,17 +11,7 @@ import SignpostIcon from '@mui/icons-material/Signpost';
 function Urlshort(props) {
   const [open,setOpen]=useState(false)
 
-  const main=async()=>{
-    await ("http://localhost:8000/")
-  
-  }
-
-  useEffect(()=>{
-    main()
-  },[])
-
-  
-
+ 
   return (
     <div className='uuu' > 
        <div className='userheader'>
